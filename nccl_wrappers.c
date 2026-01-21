@@ -1,4 +1,6 @@
+#define _GNU_SOURCE
 #include "nccl_wrappers.h"
+#include <stdio.h>
 #include <dlfcn.h>
 
 // Global function pointers (actual definitions)
