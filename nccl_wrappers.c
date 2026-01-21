@@ -29,7 +29,7 @@ ncclResult_t ncclSend(
     cudaStream_t stream
 ) {
     // Logic here to determine checkpointing or not
-    printf("I AM WORKING!!!");
+    printf("I AM WORKING!!!\n");
     init_real_ncclSend();
     return real_ncclSend(sendbuff, count, datatype, peer, comm, stream);
 }
@@ -43,7 +43,7 @@ ncclResult_t ncclRecv(
     cudaStream_t stream
 ) {
     // Logic here to determine checkpointing or not
-    printf("I AM WORKING!!!");
+    printf("I AM WORKING!!!\n");
     init_real_ncclRecv();
     return real_ncclRecv(recvbuff, count, datatype, peer, comm, stream);
 }
