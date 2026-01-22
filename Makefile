@@ -1,4 +1,4 @@
-TEST_FILE = test_file.c
+TEST_FILE = test_file2.c
 
 nccl_wrappers.so: nccl_wrappers.c
 	gcc -shared -fPIC -ldl -I/shared/EL9/explorer/nvidia-hpc-sdk/24.7/Linux_x86_64/24.7/cuda/include nccl_wrappers.c -o nccl_wrappers.so
